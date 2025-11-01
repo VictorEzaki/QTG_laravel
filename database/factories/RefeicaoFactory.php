@@ -17,7 +17,8 @@ class RefeicaoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'refeicao' => fake()->word(),   
+            'ativo' => fake()->numberBetween(0, 1),
         ];
     }
 }

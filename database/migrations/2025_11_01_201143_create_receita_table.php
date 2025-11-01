@@ -13,7 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('receita', function (Blueprint $table) {
-            $table->id('id_receita');
+            $table->id();
             $table->string('titulo');
             $table->mediumText('descricao');
             $table->foreignIdFor(Usuario::class)->constrained()->cascadeOnDelete();
