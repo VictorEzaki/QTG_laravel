@@ -21,11 +21,11 @@ class Receita extends Model
 
     public function categorias()
     {
-        return $this->belongsToMany(Categoria::class, 'receita_categoria', foreignPivotKey: 'categoria_id');
+        return $this->belongsToMany(Categoria::class, 'receita_categoria', 'receita_id', 'categoria_id');
     }
 
     public function refeicoes()
     {
-        return $this->belongsToMany(Refeicao::class, 'receita_refeicao', foreignPivotKey: 'refeicao_id');
+        return $this->belongsToMany(Refeicao::class, 'receita_refeicao', 'receita_id', 'refeicao_id');
     }
 }

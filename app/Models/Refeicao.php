@@ -16,6 +16,6 @@ class Refeicao extends Model
 
     public function receitas()
     {
-        return $this->belongsToMany(Receita::class, 'receita_refeicao', foreignPivotKey: 'receita_id');
+        return $this->belongsToMany(Receita::class, 'receita_refeicao', 'refeicao_id', 'receita_id');
     }
 }

@@ -14,7 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('receita_refeicao', function (Blueprint $table) {
-            $table->id('id_receita_refeicao');
+            $table->id();
             $table->foreignIdFor(Receita::class)->constrained()->cascadeOnDelete();
             $table->foreignIdFor(Refeicao::class)->constrained()->cascadeOnDelete();
             $table->timestamps();

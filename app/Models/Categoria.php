@@ -14,8 +14,7 @@ class Categoria extends Model
 
     protected $guarded = [];
 
-    public function receitas()
-    {
-        return $this->belongsToMany(Receita::class, 'categoria_receita', foreignPivotKey: 'receita_id');
+    public function receitas() {
+        return $this->belongsToMany(Receita::class, 'categoria_receita', 'categoria_id', 'receita_id');
     }
 }

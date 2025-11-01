@@ -45,6 +45,6 @@ class Usuario extends Authenticatable
 
     public function receitas()
     {
-        return $this->hasMany(Receita::class, 'receita_id');
+        return $this->hasMany(Receita::class);
     }
 }
