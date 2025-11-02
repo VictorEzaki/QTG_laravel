@@ -1,0 +1,20 @@
+<x-layout>
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('css/registrar.css') }}">
+    @endpush
+    <form id="form-registro" action="/login" method="POST">
+        @csrf
+
+        <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="fulano@gmail.com">
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" name="senha">
+        </div>
+
+        <button id="button" type="submit">Entrar</button>
+    </form>
+</x-layout>

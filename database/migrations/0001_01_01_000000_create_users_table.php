@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->date('dt_nascimento')->nullable();
             $table->integer('cep')->nullable();
-            $table->tinyInteger('genero');
+            $table->tinyInteger('genero')->nullable();
             $table->string('senha');
             $table->dateTime('dt_inscrito');
             $table->rememberToken();
