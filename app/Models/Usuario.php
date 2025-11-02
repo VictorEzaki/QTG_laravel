@@ -47,4 +47,9 @@ class Usuario extends Authenticatable
     {
         return $this->hasMany(Receita::class);
     }
+
+    public function getAuthPassword()
+    {
+        return $this->senha;
+    }
 }
