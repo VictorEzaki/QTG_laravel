@@ -16,12 +16,13 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 /* --- Formulário --- */
 #form-registro {
     background-color: var(--bg-card);
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 2rem;
     width: 100%;
     max-width: 450px;
@@ -46,6 +47,7 @@ label {
     margin-bottom: 0.3rem;
     color: var(--text-primary);
     font-weight: 500;
+    font-size: 13px;
 }
 
 input[type="text"],
@@ -60,6 +62,7 @@ input[type="number"] {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.2s;
+    height: 40px;
 }
 
 input:focus {
