@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /* registrar.css usando o root fornecido */
 
 /* --- Reset e fonte --- */
@@ -19,6 +21,7 @@ body {
     box-sizing: border-box;
 }
 
+>>>>>>> f7be92cea8e5accc7c711d50cccd77eb346278f7
 /* --- Formulário --- */
 #form-registro {
     background-color: var(--bg-card);

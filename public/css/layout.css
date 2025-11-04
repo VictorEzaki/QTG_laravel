@@ -29,7 +29,7 @@ body {
     font-family: "Inter", Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
 }
