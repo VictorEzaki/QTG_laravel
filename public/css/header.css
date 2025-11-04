@@ -1,0 +1,30 @@
+#header {
+    background-color: var(--bg-card);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 4px 12px var(--shadow-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title-header {
+    color: var(--color-primary);
+    margin-left: 10px;
+}
+
+#button-header {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+    color: var(--text-primary);
+    min-width: 70px;
+}
+#button-header:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-hover);
+    border-radius: 5px;
+    transition: .4s;
+}

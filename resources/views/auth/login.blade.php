@@ -2,6 +2,11 @@
     @push('styles')
         <link rel="stylesheet" href="{{ asset('css/registrar.css') }}">
     @endpush
+
+    <x-slot:styles>
+        <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    </x-slot:styles>
+
     <form id="form-registro" action="/login" method="POST">
         @csrf
 

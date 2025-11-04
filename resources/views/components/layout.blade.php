@@ -12,16 +12,18 @@
 
     @stack('styles')
 
+    {{ $styles ?? '' }}
+
 </head>
 
 <body class="h-full">
-    @auth
-        <form method="POST" action="/logout">
-            @csrf
-            <button id="button" type="submit">Sair</button>
-        </form>
-    @endauth
+
+    <x-header />
+
     {{ $slot }}
+
+    <x-footer />
+
 </body>
 
 </html>
