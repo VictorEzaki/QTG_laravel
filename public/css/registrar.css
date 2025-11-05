@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-=======
-/* registrar.css usando o root fornecido */
-
-/* --- Reset e fonte --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
-}
-
-body {
-    background-color: var(--bg-page);
-    color: var(--text-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
->>>>>>> f7be92cea8e5accc7c711d50cccd77eb346278f7
 /* --- Formulário --- */
 #form-registro {
     background-color: var(--bg-card);
