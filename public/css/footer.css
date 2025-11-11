@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--bg-card);
+    gap: 10px;
+}
+
+#profile-container {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-active);
+    padding: 16px;
+    gap: 50px;
+}
+
+.img-perfil {
+    width: 32px;
+    height: auto;
+    border-radius: 9999rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+#copy {
+    font-size: 10px;
+}

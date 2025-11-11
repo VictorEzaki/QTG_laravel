@@ -4,5 +4,5 @@
         <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     </x-slot:styles>
 
-    <h1>Home</h1>
+    <h1>Categoria em desenvolvimento...</h1>
 </x-layout>
