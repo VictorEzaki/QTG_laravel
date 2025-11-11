@@ -4,7 +4,6 @@ use App\Http\Controllers\RegistrarUsuarioController;
 use App\Http\Controllers\SessaoUsuarioController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/home', 'home')->middleware('auth');
 Route::view('/categoria', 'categoria')->middleware('auth');
 Route::view('/refeicao', 'refeicao')->middleware('auth');
 Route::view('/receita', 'receita')->middleware('auth');

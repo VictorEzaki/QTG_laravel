@@ -12,7 +12,7 @@ footer {
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-active);
-    padding: 16px;
+    padding-bottom: 10px;
     gap: 50px;
 }
 
@@ -33,6 +33,10 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    font-size: 12px;
+}
+
+#title-footer {
     font-size: 12px;
 }
 
