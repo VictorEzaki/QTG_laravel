@@ -5,6 +5,7 @@
 
     <x-slot:styles>
         <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     </x-slot:styles>
 
     <form id="form-registro" action="/registrar" method="POST">

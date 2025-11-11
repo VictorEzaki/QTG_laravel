@@ -14,7 +14,7 @@ class SessaoUsuarioController extends Controller
     }
 
     public function index() {
-        return view('home');
+        return view('categoria');
     }
 
     public function store()
@@ -35,7 +35,7 @@ class SessaoUsuarioController extends Controller
 
         request()->session()->regenerate();
 
-        return redirect('/home');
+        return redirect('/categoria');
     }
 
     public function destroy()
