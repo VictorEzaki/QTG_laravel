@@ -7,17 +7,17 @@
 
     <div class="container-buttons-header">
         @guest
-            <div style="display: flex; justify-content: flex-end; width: 100%;">
-                <a class="button-header" href="/login">Login</a>
-                <a class="button-header" href="/registrar">Inscrever-se</a>
+            <div style="display: flex; justify-content: flex-end; width: 100%; align-items: center;">
+                <x-nav-link href="/" :active="request()->is('/')">Log in</x-nav-link>
+                <x-nav-link href="/registrar" :active="request()->is('registrar')">Inscrever-se</x-nav-link>
             </div>
         @endguest
 
         @auth
             <div id="nav-bar">
-                <a class="button-header" href="/categoria">Categoria</a>
-                <a class="button-header" href="/refeicao">Refeição</a>
-                <a class="button-header" href="/receita">Receita</a>
+                <x-nav-link href="/categoria" :active="request()->is('categoria')">Categoria</x-nav-link>
+                <x-nav-link href="/refeicao" :active="request()->is('refeicao')">Refeição</x-nav-link>
+                <x-nav-link href="/receita" :active="request()->is('receita')">Receita</x-nav-link>
             </div>
 
             <form action="/logout" method="POST" style="padding: 0">

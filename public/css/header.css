@@ -66,3 +66,15 @@
 #button-logout:hover {
     background-color: var(--color-primary-hover);
 }
+
+.active {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--text-primary);
+    min-width: 70px;
+    font-weight: 500;
+    background-color: var(--color-primary-hover);
+    border-radius: 5px;
+    color: var(--bg-card);
+}
