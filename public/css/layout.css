@@ -1,0 +1,35 @@
+:root {
+    /* Botões e CTA */
+    --color-primary: #FFA94D;        /* Laranja vibrante */
+    --color-primary-hover: #FF922B;  /* Laranja escuro */
+    --color-alert: #FF6B6B;          /* Vermelho vibrante */
+    --color-alert-hover: #E03E3E;    /* Vermelho escuro */
+
+    /* Fundos */
+    --bg-page: #F6F6F6;              /* Fundo neutro */
+    --bg-card: #FFFFFF;              /* Card / blocos */
+    --bg-card-hover: #FFF3E0;        /* Card hover / destaque */
+
+    /* Texto */
+    --text-primary: #222222;         /* Títulos / textos principais */
+    --text-secondary: #555555;       /* Subtítulos / descrições */
+
+    /* Bordas e inputs */
+    --border-light: #DDDDDD;         /* Bordas suaves */
+    --border-active: #FFA94D;        /* Bordas de input em foco */
+
+    /* Sombras */
+    --shadow-card: rgba(0, 0, 0, 0.08);
+    --shadow-button-hover: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--bg-page);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
