@@ -14,11 +14,15 @@
         <div>
             <label for="email">E-mail</label>
             <input id="email" type="email" name="email" placeholder="fulano@gmail.com">
+
+            <x-form-error name='email'></x-form-error>
         </div>
 
         <div>
             <label for="senha">Senha</label>
             <input id="senha" type="password" name="senha">
+
+            <x-form-error name='senha'></x-form-error>
         </div>
 
         <button id="button" type="submit">Entrar</button>

@@ -14,21 +14,43 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
-    
+
     @stack('styles')
-    
+
     {{ $styles ?? '' }}
-    
+
 </head>
 
 <body class="h-full">
-    
+
     <x-header />
-    
+
     {{ $slot }}
-    
+
+    @if (session('success'))
+        <div id="alert-success"
+            style="
+             position: fixed;
+             top: 100px;
+             right: 20px;
+             padding: 15px;
+             background: #4CAF50;
+             color: white;
+             border-radius: 5px;
+             z-index: 9999;
+         ">
+            {{ session('success') }}
+        </div>
+
+        <script>
+            setTimeout(() => {
+                document.getElementById('alert-success').style.display = 'none';
+            }, 2500);
+        </script>
+    @endif
+
     <x-footer />
-    
+
 </body>
 
 </html>
