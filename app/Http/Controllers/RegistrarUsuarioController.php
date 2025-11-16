@@ -14,7 +14,7 @@ class RegistrarUsuarioController extends Controller
     public function store() {
         $validatedAttributes = request()->validate([
             'nome' => ['required', 'max:60', 'string'],
-            'email' => ['required', 'email', 'max:80', 'string'],
+            'email' => ['required', 'email', 'max:80', 'unique:usuario,email', 'string'],
             'dt_nascimento' => ['nullable', 'date'],
             'cep' => ['nullable', 'integer'],
             'genero' => ['nullable', 'in:0,1'],
