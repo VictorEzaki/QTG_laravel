@@ -6,22 +6,24 @@
     </x-slot:styles>
 
 
-        <form id="form-registro" action="/cadastro" method="POST">
-    @csrf
+    <form id="form-registro" action="/refeicao" method="POST">
+        @csrf
 
-    <div>
-        <label for="categoria">Refeição</label>
-        <input id="categoria" type="text" name="categoria" placeholder="jantar">
-    </div>
+        <div>
+            <label for="refeicao">Refeição</label>
+            <input id="refeicao" type="text" name="refeicao" placeholder="jantar">
 
-    <div>
-        <label for="ativo">Ativo</label>
-        <label class="switch">
-            <input id="ativo" type="checkbox" name="ativo" value="1">
-            <span class="slider"></span>
-        </label>
-    </div>
+            <x-form-error name='refeicao'></x-form-error>
+        </div>
 
-    <button id="button" type="submit">Criar</button>
-</form>
+        <div>
+            <label for="ativo">Ativo</label>
+            <label class="switch">
+                <input id="ativo" type="checkbox" name="ativo" value="1">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <button id="button" type="submit">Criar</button>
+    </form>
 </x-layout>

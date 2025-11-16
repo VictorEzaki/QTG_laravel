@@ -25,6 +25,6 @@ class RegistrarUsuarioController extends Controller
 
         Usuario::create($validatedAttributes);
 
-        return redirect('/login');
+        return redirect('/')->with('success', 'Cadastro realizado com sucesso!');
     }
 }

@@ -12,27 +12,33 @@
         @csrf
         <div>
             <label for="nome">Nome</label>
-            <input id="nome" type="text" name="nome" placeholder="Fulano...">
+            <input id="nome" type="text" name="nome" :value="old('nome')" placeholder="Fulano...">
+
+            <x-form-error name='nome'></x-form-error>
         </div>
 
         <div>
             <label for="email">E-mail</label>
-            <input id="email" type="email" name="email" placeholder="fulano@gmail.com">
+            <input id="email" type="email" name="email" :value="old('email')" placeholder="fulano@gmail.com">
+
+            <x-form-error name='email'></x-form-error>
         </div>
 
         <div>
             <label for="senha">Senha</label>
             <input id="senha" type="password" name="senha">
+
+            <x-form-error name='senha'></x-form-error>
         </div>
 
         <div>
             <label for="dt_nascimento">Data de nascimento</label>
-            <input id="dt_nascimento" type="date" name="dt_nascimento">
+            <input id="dt_nascimento" type="date" name="dt_nascimento" :value="old('dt_nascimento')">
         </div>
 
         <div>
             <label for="cep">CEP</label>
-            <input id="cep" type="number" name="cep">
+            <input id="cep" type="number" name="cep" :value="old('cep')">
         </div>
 
         <div id="genero">

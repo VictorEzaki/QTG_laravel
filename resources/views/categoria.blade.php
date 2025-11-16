@@ -7,12 +7,14 @@
 
 
 
-    <form id="form-registro" action="/cadastro" method="POST">
+    <form id="form-registro" action="/categoria" method="POST">
     @csrf
 
     <div>
         <label for="categoria">Nome da Categoria</label>
         <input id="categoria" type="text" name="categoria" placeholder="Japonesa">
+
+        <x-form-error name='categoria'></x-form-error>
     </div>
 
     <div>

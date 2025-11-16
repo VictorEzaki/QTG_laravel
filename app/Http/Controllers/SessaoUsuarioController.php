@@ -35,13 +35,13 @@ class SessaoUsuarioController extends Controller
 
         request()->session()->regenerate();
 
-        return redirect('/categoria');
+        return redirect('/categoria')->with('success', 'Login realizado com sucesso. Seja bem-vindo!');
     }
 
     public function destroy()
     {
         Auth::logout();
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Até mais!');
     }
 }
