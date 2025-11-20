@@ -15,7 +15,7 @@ return [
     'array'                  => 'O campo :attribute deve conter uma coleção de elementos.',
     'ascii'                  => 'O :attribute deve conter apenas caracteres alfanuméricos de byte único e símbolos.',
     'before'                 => 'O campo :attribute deve conter uma data anterior a :date.',
-    'before_or_equal'        => 'O campo :attribute deve conter uma data anterior ou igual a :date.',
+    'before_or_equal'        => 'O campo data de nascimento deve conter uma data anterior ou igual a hoje.',
     'between'                => [
         'array'   => ':attribute deve conter entre :min e :max itens.',
         'file'    => 'O arquivo :attribute deve ter entre :min e :max quilobytes.',
