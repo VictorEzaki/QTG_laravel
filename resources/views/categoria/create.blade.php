@@ -12,7 +12,7 @@
 
     <div>
         <label for="categoria">Nome da Categoria</label>
-        <input id="categoria" type="text" name="categoria" placeholder="Japonesa">
+        <input id="categoria" type="text" name="categoria" placeholder="Massas, sobremesa...">
 
         <x-form-error name='categoria'></x-form-error>
     </div>

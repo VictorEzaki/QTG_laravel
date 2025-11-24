@@ -1,21 +1,27 @@
 USE quase_tudo_gostoso;
 
 -- ============================
--- USUÁRIO
--- ============================
-INSERT INTO usuario (id, nome, email, dt_nascimento, cep, genero, senha, dt_inscrito, remember_token, created_at, updated_at)
-VALUES
-(1, 'João Silva', 'joao@example.com', '1990-05-12', 89200000, 1, '123456', NOW(), NULL, NOW(), NOW()),
-(2, 'Maria Oliveira', 'maria@example.com', '1995-02-20', 89010000, 2, '123456', NOW(), NULL, NOW(), NOW());
-
--- ============================
 -- CATEGORIA
 -- ============================
 INSERT INTO categoria (id, categoria, ativo, created_at, updated_at)
 VALUES
-(1, 'Massas', 1, NOW(), NOW()),
-(2, 'Sobremesas', 1, NOW(), NOW()),
-(3, 'Salgados', 1, NOW(), NOW());
+(4, 'Carnes', 1, NOW(), NOW()),
+(5, 'Bebidas', 1, NOW(), NOW()),
+(6, 'Saladas', 1, NOW(), NOW()),
+(7, 'Molhos', 1, NOW(), NOW()),
+(8, 'Aperitivos', 1, NOW(), NOW()),
+(9, 'Café da Manhã', 1, NOW(), NOW()),
+(10, 'Lanches', 1, NOW(), NOW()),
+(11, 'Veganas', 1, NOW(), NOW()),
+(12, 'Vegetarianas', 1, NOW(), NOW()),
+(13, 'Mariscos', 1, NOW(), NOW()),
+(14, 'Sopas', 1, NOW(), NOW()),
+(15, 'Pratos Rápidos', 1, NOW(), NOW()),
+(16, 'Saudável', 1, NOW(), NOW()),
+(17, 'Low Carb', 1, NOW(), NOW()),
+(18, 'Fitness', 1, NOW(), NOW()),
+(19, 'Doces', 1, NOW(), NOW()),
+(20, 'Tortas', 1, NOW(), NOW());
 
 -- ============================
 -- REFEIÇÃO
@@ -31,22 +37,39 @@ VALUES
 -- ============================
 INSERT INTO ingrediente (id, ingrediente, created_at, updated_at)
 VALUES
-(1, 'Farinha de Trigo', NOW(), NOW()),
-(2, 'Ovos', NOW(), NOW()),
-(3, 'Leite', NOW(), NOW()),
-(4, 'Açúcar', NOW(), NOW()),
-(5, 'Chocolate em pó', NOW(), NOW()),
-(6, 'Frango', NOW(), NOW()),
-(7, 'Arroz', NOW(), NOW());
-
--- ============================
--- PREPARO
--- ============================
-INSERT INTO preparo (id, modo_preparo, tempo_preparo, created_at, updated_at)
-VALUES
-(1, 'Misture todos os ingredientes e asse por 40 minutos.', '00:40:00', NOW(), NOW()),
-(2, 'Cozinhe o frango, adicione molho e finalize no forno.', '00:50:00', NOW(), NOW()),
-(3, 'Ferva o leite, adicione chocolate e açúcar, mexa até engrossar.', '00:15:00', NOW(), NOW());
+(8, 'Manteiga', NOW(), NOW()),
+(9, 'Fermento em pó', NOW(), NOW()),
+(10, 'Sal', NOW(), NOW()),
+(11, 'Tomate', NOW(), NOW()),
+(12, 'Cebola', NOW(), NOW()),
+(13, 'Alho', NOW(), NOW()),
+(14, 'Azeite de Oliva', NOW(), NOW()),
+(15, 'Batata', NOW(), NOW()),
+(16, 'Carne Moída', NOW(), NOW()),
+(17, 'Peito de Frango', NOW(), NOW()),
+(18, 'Queijo Mussarela', NOW(), NOW()),
+(19, 'Presunto', NOW(), NOW()),
+(20, 'Macarrão', NOW(), NOW()),
+(21, 'Molho de Tomate', NOW(), NOW()),
+(22, 'Creme de Leite', NOW(), NOW()),
+(23, 'Margarina', NOW(), NOW()),
+(24, 'Cenoura', NOW(), NOW()),
+(25, 'Ervilha', NOW(), NOW()),
+(26, 'Milho', NOW(), NOW()),
+(27, 'Feijão', NOW(), NOW()),
+(28, 'Pão', NOW(), NOW()),
+(29, 'Banana', NOW(), NOW()),
+(30, 'Laranja', NOW(), NOW()),
+(31, 'Salsinha', NOW(), NOW()),
+(32, 'Cebolinha', NOW(), NOW()),
+(33, 'Orégano', NOW(), NOW()),
+(34, 'Pimenta-do-reino', NOW(), NOW()),
+(35, 'Canela em pó', NOW(), NOW()),
+(36, 'Mel', NOW(), NOW()),
+(37, 'Açúcar Mascavo', NOW(), NOW()),
+(38, 'Coco Ralado', NOW(), NOW()),
+(39, 'Leite Condensado', NOW(), NOW()),
+(40, 'Gelatina Incolor', NOW(), NOW());
 
 -- ============================
 -- COZINHA
@@ -55,7 +78,24 @@ INSERT INTO cozinha (id, cozinha, ativo, created_at, updated_at)
 VALUES
 (1, 'Brasileira', 1, NOW(), NOW()),
 (2, 'Italiana', 1, NOW(), NOW()),
-(3, 'Caseira', 1, NOW(), NOW());
+(3, 'Caseira', 1, NOW(), NOW()),
+(4, 'Japonesa', 1, NOW(), NOW()),
+(5, 'Chinesa', 1, NOW(), NOW()),
+(6, 'Mexicana', 1, NOW(), NOW()),
+(7, 'Árabe', 1, NOW(), NOW()),
+(8, 'Indiana', 1, NOW(), NOW()),
+(9, 'Francesa', 1, NOW(), NOW()),
+(10, 'Mediterrânea', 1, NOW(), NOW()),
+(11, 'Vegana', 1, NOW(), NOW()),
+(12, 'Vegetariana', 1, NOW(), NOW()),
+(13, 'Coreana', 1, NOW(), NOW()),
+(14, 'Tailandesa', 1, NOW(), NOW()),
+(15, 'Espanhola', 1, NOW(), NOW()),
+(16, 'Grega', 1, NOW(), NOW()),
+(17, 'Africana', 1, NOW(), NOW()),
+(18, 'Americana', 1, NOW(), NOW()),
+(19, 'Portuguesa', 1, NOW(), NOW()),
+(20, 'Peruana', 1, NOW(), NOW());
 
 -- ============================
 -- UTENSÍLIO
@@ -64,7 +104,34 @@ INSERT INTO utensilio (id, utensilio, created_at, updated_at)
 VALUES
 (1, 'Panela', NOW(), NOW()),
 (2, 'Forno', NOW(), NOW()),
-(3, 'Tigela', NOW(), NOW());
+(3, 'Tigela', NOW(), NOW()),
+(4, 'Frigideira', NOW(), NOW()),
+(5, 'Liquidificador', NOW(), NOW()),
+(6, 'Batedeira', NOW(), NOW()),
+(7, 'Colher de Pau', NOW(), NOW()),
+(8, 'Faca Chef', NOW(), NOW()),
+(9, 'Ralador', NOW(), NOW()),
+(10, 'Assadeira', NOW(), NOW()),
+(11, 'Panela de Pressão', NOW(), NOW()),
+(12, 'Tabua de Corte', NOW(), NOW()),
+(13, 'Escorredor de Macarrão', NOW(), NOW()),
+(14, 'Espátula', NOW(), NOW()),
+(15, 'Peneira', NOW(), NOW()),
+(16, 'Micro-ondas', NOW(), NOW()),
+(17, 'Chaleira', NOW(), NOW()),
+(18, 'Forma de Bolo', NOW(), NOW()),
+(19, 'Copo Medidor', NOW(), NOW()),
+(20, 'Pegador de Massa', NOW(), NOW()),
+(21, 'Moedor de Alho', NOW(), NOW()),
+(22, 'Tábua de Carne', NOW(), NOW()),
+(23, 'Descascador de Legumes', NOW(), NOW()),
+(24, 'Concha', NOW(), NOW()),
+(25, 'Leiteira', NOW(), NOW()),
+(26, 'Wok', NOW(), NOW()),
+(27, 'Termômetro Culinário', NOW(), NOW()),
+(28, 'Mixer', NOW(), NOW()),
+(29, 'Saco de Confeitar', NOW(), NOW()),
+(30, 'Forma para Pizza', NOW(), NOW());
 
 -- ============================
 -- DIFICULDADE
@@ -83,63 +150,3 @@ VALUES
 (1, 'Baixo', NOW(), NOW()),
 (2, 'Médio', NOW(), NOW()),
 (3, 'Alto', NOW(), NOW());
-
--- ============================
--- RECEITA
--- ============================
-INSERT INTO receita (id, titulo, descricao, usuario_id, preparo_id, dificuldade_id, custo_id, created_at, updated_at)
-VALUES
-(1, 'Bolo de Chocolate', 'Um bolo simples, fofinho e saboroso.', 1, 1, 1, 1, NOW(), NOW()),
-(2, 'Frango Assado Especial', 'Frango suculento com tempero caseiro.', 2, 2, 2, 2, NOW(), NOW()),
-(3, 'Chocolate Quente Cremoso', 'Perfeito para dias frios.', 1, 3, 1, 1, NOW(), NOW());
-
--- ============================
--- RECEITA_CATEGORIA
--- ============================
-INSERT INTO receita_categoria (receita_id, categoria_id, created_at, updated_at)
-VALUES
-(1, 2, NOW(), NOW()),  -- Bolo de Chocolate -> Sobremesas
-(2, 3, NOW(), NOW()),  -- Frango Assado -> Salgados
-(3, 2, NOW(), NOW());  -- Chocolate Quente -> Sobremesas
-
--- ============================
--- RECEITA_REFEICAO
--- ============================
-INSERT INTO receita_refeicao (receita_id, refeicao_id, created_at, updated_at)
-VALUES
-(1, 2, NOW(), NOW()), -- bolo -> almoço
-(1, 3, NOW(), NOW()), -- bolo -> jantar
-(2, 2, NOW(), NOW()), -- frango -> almoço
-(3, 1, NOW(), NOW()); -- chocolate quente -> café da manhã
-
--- ============================
--- INGREDIENTE_RECEITA
--- ============================
-INSERT INTO ingrediente_receita (receita_id, ingrediente_id, created_at, updated_at)
-VALUES
-(1, 1, NOW(), NOW()), -- farinha no bolo
-(1, 2, NOW(), NOW()), -- ovos no bolo
-(1, 5, NOW(), NOW()), -- chocolate no bolo
-(2, 6, NOW(), NOW()), -- frango na receita
-(3, 3, NOW(), NOW()), -- leite no choco quente
-(3, 5, NOW(), NOW()); -- chocolate no choco quente
-
--- ============================
--- COZINHA_RECEITA
--- ============================
-INSERT INTO cozinha_receita (receita_id, cozinha_id, created_at, updated_at)
-VALUES
-(1, 3, NOW(), NOW()), -- bolo -> cozinha caseira
-(2, 1, NOW(), NOW()), -- frango -> brasileira
-(3, 3, NOW(), NOW()); -- chocolate quente -> caseira
-
--- ============================
--- RECEITA_UTENSÍLIO
--- ============================
-INSERT INTO receita_utensilio (receita_id, utensilio_id, created_at, updated_at)
-VALUES
-(1, 2, NOW(), NOW()), -- forno no bolo
-(1, 3, NOW(), NOW()), -- tigela no bolo
-(2, 1, NOW(), NOW()), -- panela no frango
-(2, 2, NOW(), NOW()), -- forno no frango
-(3, 1, NOW(), NOW()); -- panela no chocolate quente
