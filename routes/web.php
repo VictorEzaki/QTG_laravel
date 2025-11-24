@@ -15,6 +15,8 @@ Route::get('/', [SessaoUsuarioController::class, 'create'])->name('login');
 Route::post('/login', [SessaoUsuarioController::class, 'store']);
 Route::post('/logout', [SessaoUsuarioController::class, 'destroy']);
 
+Route::view('/home', 'home')->middleware('auth');
+
 Route::get('/categoria', [CategoriaController::class, 'create'])->middleware('auth');
 Route::post('/categoria/store', [CategoriaController::class, 'store'])->middleware('auth');
 
