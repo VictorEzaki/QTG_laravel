@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class RefeicaoController extends Controller
 {
     public function create() {
-        return view('refeicao');
+        return view('refeicao.create');
     }
 
     public function store() {

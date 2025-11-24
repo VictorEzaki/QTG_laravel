@@ -28,4 +28,34 @@ class Receita extends Model
     {
         return $this->belongsToMany(Refeicao::class, 'receita_refeicao', 'receita_id', 'refeicao_id');
     }
+
+    public function ingredientes()
+    {
+        return $this->belongsToMany(Ingrediente::class, 'ingrediente_receita', 'receita_id', 'ingrediente_id');
+    }
+
+    public function utensilios()
+    {
+        return $this->belongsToMany(Utensilio::class, 'receita_utensilio', 'receita_id', 'utensilio_id');
+    }
+
+    public function cozinhas()
+    {
+        return $this->belongsToMany(Cozinha::class, 'cozinha_receita', 'receita_id', 'cozinha_id');
+    }
+
+    public function custo()
+    {
+        return $this->belongsTo(Custo::class);
+    }
+
+    public function dificuldade()
+    {
+        return $this->belongsTo(Dificuldade::class);
+    }
+
+    public function preparo()
+    {
+        return $this->belongsTo(Preparo::class);
+    }
 }
