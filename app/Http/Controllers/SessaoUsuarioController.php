@@ -13,10 +13,6 @@ class SessaoUsuarioController extends Controller
         return view('auth.login');
     }
 
-    public function index() {
-        return view('categoria');
-    }
-
     public function store()
     {
         $validatedAttributes = request()->validate([

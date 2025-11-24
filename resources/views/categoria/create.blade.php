@@ -7,7 +7,7 @@
 
 
 
-    <form id="form-registro" action="/categoria" method="POST">
+    <form id="form-registro" action="/categoria/store" method="POST">
     @csrf
 
     <div>

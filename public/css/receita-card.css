@@ -1,0 +1,75 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+}
+
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-receitas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background-color: var(--bg-page);
+}
+
+.receita-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    background-color: var(--bg-card);
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 5px;
+}
+.receita-card:hover {
+    background-color: var(--bg-card-hover);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.head-receitas, .head-receitas form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.head-receitas form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-receitas form div input[type="text"],
+.head-receitas form div select {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+    background-color: #fff;
+}
+
+#button {
+    background-color: var(--color-primary);
+    color: var(--bg-card);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#button:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 4px 12px var(--shadow-button-hover);
+    transform: translateY(-2px);
+}

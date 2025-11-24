@@ -18,6 +18,7 @@
                 <x-nav-link href="/categoria" :active="request()->is('categoria')">Categoria</x-nav-link>
                 <x-nav-link href="/refeicao" :active="request()->is('refeicao')">Refeição</x-nav-link>
                 <x-nav-link href="/receita" :active="request()->is('receita')">Receita</x-nav-link>
+                <x-nav-link href="/dificuldade" :active="request()->is('dificuldade')">Dificuldade</x-nav-link>
             </div>
 
             <form action="/logout" method="POST" style="padding: 0">
