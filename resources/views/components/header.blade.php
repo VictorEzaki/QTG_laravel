@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     @endpush
 
-    <h1 id="title-header">Quase tudo gostoso</h1>
+    <a href="/home" id="title-header">Quase tudo gostoso</a>
 
     <div class="container-buttons-header">
         @guest
@@ -15,9 +15,11 @@
 
         @auth
             <div id="nav-bar">
+                <x-nav-link href="/home" :active="request()->is('home')">Home</x-nav-link>
+                <x-nav-link href="/receita" :active="request()->is('receita')">Receita</x-nav-link>
                 <x-nav-link href="/categoria" :active="request()->is('categoria')">Categoria</x-nav-link>
                 <x-nav-link href="/refeicao" :active="request()->is('refeicao')">Refeição</x-nav-link>
-                <x-nav-link href="/receita" :active="request()->is('receita')">Receita</x-nav-link>
+                <x-nav-link href="/dificuldade" :active="request()->is('dificuldade')">Dificuldade</x-nav-link>
             </div>
 
             <form action="/logout" method="POST" style="padding: 0">

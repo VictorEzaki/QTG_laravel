@@ -4,5 +4,6 @@
         <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     </x-slot:styles>
 
-    <h1>Receita em desenvolvimento...</h1>
+
+    <h1>Em desenvolvimento...</h1>
 </x-layout>

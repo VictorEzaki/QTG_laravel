@@ -34,6 +34,7 @@
         <div>
             <label for="dt_nascimento">Data de nascimento</label>
             <input id="dt_nascimento" type="date" name="dt_nascimento" :value="old('dt_nascimento')">
+            <x-form-error name='dt_nascimento'></x-form-error>
         </div>
 
         <div>

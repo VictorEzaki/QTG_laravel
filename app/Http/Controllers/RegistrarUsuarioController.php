@@ -15,7 +15,7 @@ class RegistrarUsuarioController extends Controller
         $validatedAttributes = request()->validate([
             'nome' => ['required', 'max:60', 'string'],
             'email' => ['required', 'email', 'max:80', 'unique:usuario,email', 'string'],
-            'dt_nascimento' => ['nullable', 'date'],
+            'dt_nascimento' => ['nullable', 'before_or_equal:today', 'date'],
             'cep' => ['nullable', 'integer'],
             'genero' => ['nullable', 'in:0,1'],
             'senha' => ['required', Password::min(6), 'string'],
@@ -24,6 +24,7 @@ class RegistrarUsuarioController extends Controller
         $validatedAttributes['dt_inscrito'] = now();
 
         Usuario::create($validatedAttributes);
+
 
         return redirect('/')->with('success', 'Cadastro realizado com sucesso!');
     }
