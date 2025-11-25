@@ -12,18 +12,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     gap: 20px;
 }
 
 .filtros {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    background: var(--bg-card);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px var(--shadow-card);
+    align-items: flex-end;
+    gap: 18px 28px;
+    padding: 10px 0
 }
 
 .filtros div {
@@ -47,6 +44,7 @@
     color: var(--text-primary);
     font-size: 0.95rem;
     transition: 0.2s;
+    min-width: 160px;
 }
 
 .filtros select:focus,
