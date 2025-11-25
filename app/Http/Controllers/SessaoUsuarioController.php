@@ -31,7 +31,7 @@ class SessaoUsuarioController extends Controller
 
         request()->session()->regenerate();
 
-        return redirect('/categoria')->with('success', 'Login realizado com sucesso. Seja bem-vindo!');
+        return redirect('/home')->with('success', 'Login realizado com sucesso. Seja bem-vindo!');
     }
 
     public function destroy()
