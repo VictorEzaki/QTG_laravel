@@ -102,7 +102,6 @@
             const receitaId = "{{ $receita->id }}";
         </script>
 
-
         <script>
             const overlay = document.getElementById("modalOverlay");
             const openModal = document.getElementById("openModal");
