@@ -7,6 +7,9 @@ Atualmente, o sistema conta com as seguintes funcionalidades:
 - 🔐 **Login e Logout**
 - 🗂️ **Cadastro de categorias**
 - 🍛 **Cadastro de refeições**
+- 🧩 **Cadastro de dificuldades**
+- 🍽️ **Cadastro de receitas completas com imagem**
+- 🏠 **Página inicial com destaques de receitas**
 
 ---
 
@@ -17,6 +20,11 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 - **PHP 8.3.x**  
 - **Composer**  
 - **Laravel 12.x**
+
+Além disso, é necessário **configurar o arquivo `php.ini`** habilitando as extensões necessárias para o Laravel e para uploads de arquivos, como:
+
+- `pdo_mysql`
+- `fileinfo`
 
 ---
 
