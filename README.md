@@ -53,7 +53,12 @@ php artisan key:generate
 php artisan migrate
 ```
 
-### 6. Inicie o servidor local
+### 6. Gere um link simbólico para acessar as imagens
+```bash
+php artisan storage:link
+```
+
+### 7. Inicie o servidor local
 ```bash
 php artisan serve
 ```

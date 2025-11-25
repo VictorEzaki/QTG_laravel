@@ -21,6 +21,18 @@
     /* Sombras */
     --shadow-card: rgba(0, 0, 0, 0.08);
     --shadow-button-hover: rgba(0, 0, 0, 0.15);
+
+    /* Botões */
+    --botao-bg: #ff8c3a;
+    --botao-bg-hover: #ff9f57;
+    --botao-color: #ffffff;
+    --botao-border: transparent;
+    --botao-radius: 8px;
+    --botao-padding-vertical: clamp(8px, 1.2vw, 12px);
+    --botao-padding-horizontal: clamp(12px, 3vw, 20px);
+    --botao-font-size: clamp(0.9rem, 1.6vw, 1rem);
+    --botao-shadow: 0 4px 10px rgba(15, 15, 15, 0.08);
+    --botao-shadow-active: 0 2px 4px rgba(15, 15, 15, 0.12);
 }
 
 body {

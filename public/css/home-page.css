@@ -1,0 +1,95 @@
+article {
+    background-color: #fff4e57b;
+    padding: 15px;
+    border: 2px solid #FFA94D;
+    border-radius: 8px;
+    margin: 0 auto 20px auto;
+    width: 95%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--botao-bg);
+    color: var(--botao-color);
+    border: 1px solid var(--botao-border);
+    padding: var(--botao-padding-vertical) var(--botao-padding-horizontal);
+    font-size: var(--botao-font-size);
+    line-height: 1;
+    border-radius: var(--botao-radius);
+    box-shadow: var(--botao-shadow);
+    cursor: pointer;
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+}
+
+
+.botao:hover,
+.botao:focus:hover {
+    background-color: var(--botao-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(15, 15, 15, 0.10);
+}
+
+
+.botao:focus {
+    outline: 3px solid rgba(255, 160, 90, 0.25);
+    outline-offset: 3px;
+    box-shadow: 0 6px 14px rgba(15, 15, 15, 0.09);
+}
+
+.botao:active {
+    transform: translateY(0);
+    box-shadow: var(--botao-shadow-active);
+}
+
+.botao[aria-disabled="true"],
+.botao.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+
+
+@media (max-width: 420px) {
+    .botao {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .botao {
+        transition: none;
+    }
+}
+
+.imagem-centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-receita {
+    border-radius: 8px;
+    border: #ff8c3a 2px solid;
+}
+
+.linha-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    gap: 10px;
+    align-items: center;
+}
+
+.valores {
+    margin-top: 2px;
+}
