@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\DificuldadeController;
 use App\Http\Controllers\ReceitaController;
 use App\Http\Controllers\RefeicaoController;

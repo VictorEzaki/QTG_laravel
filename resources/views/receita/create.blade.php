@@ -84,7 +84,7 @@
             </div>
 
             <div class="form-group">
-                <label class="label-categorias">refeicao</label>
+                <label class="label-categorias">Cozinha(s)</label>
 
                 <div class="checkbox-grid">
                     @foreach ($cozinhas as $cozinha)
