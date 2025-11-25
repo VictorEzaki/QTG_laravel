@@ -16,6 +16,14 @@ use Illuminate\Support\Facades\Auth;
 
 class ReceitaController extends Controller
 {
+    public function getHome() {
+        $ultimasReceitas = Receita::orderBy('created_at', 'desc')->take(5)->get();
+        
+        return view('home', [
+            'ultimasReceitas' => $ultimasReceitas
+        ]);
+    }
+
     public function index(Request $request)
     {
         $query = Receita::with(['categorias', 'dificuldade', 'refeicoes']);
